@@ -1,0 +1,17 @@
+Options:
+    parkour_map_name: "world"
+    #アスレマップの名前
+
+on damage:
+    attacker is a player
+    attacker is in {@parkour_map_name}
+    attacker's gamemode is not creative
+    cancel event
+on break:
+    player is in {@parkour_map_name}
+    player's gamemode is not creative
+    cancel event
+on place:
+    player is in {@parkour_map_name}
+    player's gamemode is not creative
+    cancel event 
